@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  
+}
+
+.size-img{
+  height: auto;
+  width: 300px;
+  padding: 1rem;
+}
+
+
+.max-with-viewp{
+  max-width: 1000px;
+  padding: 1rem;
+  margin: auto;
+}
+body {
+  font-family:Roboto , sans-serif;
+  background: #fff;
+}

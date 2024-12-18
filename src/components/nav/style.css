@@ -1,0 +1,12 @@
+.active{
+    color: green;
+    text-decoration: solid;
+}
+.not{
+    color: rgb(0, 0, 0);
+    text-decoration: solid;
+
+}
+.border-side{
+    border-right: #979393 solid 1px;
+}

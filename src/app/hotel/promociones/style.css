@@ -1,0 +1,15 @@
+.bg-image{
+    background-image: url("../../../assets/img_servicios.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    height: 63vh;
+    position: relative;
+}
+
+.style-brightness{
+    position: absolute;
+    inset: 0;
+    background-color: #00000069;
+}
