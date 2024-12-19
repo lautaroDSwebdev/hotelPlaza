@@ -3,6 +3,7 @@ import { appData, Navdata } from "@/mock/index";
 import Link from "next/link";
 import React from "react";
 import "./style.css"
+
 const Navbar = () => {
   let logo = appData.logo_img.url;
   return (

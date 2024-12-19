@@ -1,21 +1,49 @@
-.size-img{
-    height: auto;
-    width: 300px;
-    padding: 1rem;
-  }
-  
-  
-  .max-width-viewp{
-    max-width: 1000px;
-    padding: 5px;
-    margin: auto;
-  }
+.size-img {
+  height: auto;
+  width: 300px;
+  padding: 1rem;
+}
 
-  .home-bg{
-    background-image: url("../../assets/img_portada.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-attachment: scroll;
-    background-size: cover;
-    height: 63vh;
+.max-width-viewp {
+  max-width: 1000px;
+  padding: 5px;
+  margin: auto;
+}
+
+.home-bg {
+  background-image: url('../../assets/img_portada.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 63vh;
+  position: relative;
+}
+
+.capa_oscura {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(1px);
+  filter: brightness(0.5);
+}
+
+.texto-gradiente{
+  background: linear-gradient(rgb(255, 255, 255),rgb(96, 104, 182));
+  -webkit-background-clip: text;
+  color: transparent; 
+}
+.div_p{
+  p{
+    font-size: 18px;
+    max-width: 373px;
+    color: #fff;
+    /* font-weight: bolder; */
   }
+}
+.div_img{
+  /* height: 10vh; */
+  img{
+    height: auto;
+    width: 100px;
+  }
+}
