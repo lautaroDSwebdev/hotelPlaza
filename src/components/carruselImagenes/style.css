@@ -18,8 +18,14 @@
     right: 12px;
     margin: auto;
     justify-content: space-between;
+    font-size: 25px;
     button{
       cursor: pointer;
+      &:hover{
+        transform: scale(1.2);
+        color: rgb(219, 206, 23);
+
+      }
     }
   }
   .estilosCarrusel{
@@ -37,6 +43,9 @@
       height: auto;
       width: 776px;
       margin: auto;
+      &:hover{
+        opacity: 0.8;
+      }
     }
   }
   .div_buttons_yellow{

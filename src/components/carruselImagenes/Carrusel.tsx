@@ -43,10 +43,10 @@ function Carrusel({ setfirst, first }: any) {
 
 
     return (
-        <section onDoubleClick={() => setfirst(!first)}  className={`absolute inset-0 bg-[#555353c7] ${first && "z-[800]" }`}>
-            <div className='flex justify-center max-w-[1000px] mx-auto relative top-3'>
+        <section onDoubleClick={() => setfirst(!first)}  className={`absolute inset-0 bg-[#555353c7]   ${first && "z-[10] cursor-pointer" }`}>
+            <div className='flex justify-center max-w-[1000px] mx-auto relative top-[5.5rem]'>
 
-                <button onClick={() => setfirst(!first)} className='text-[3rem] flex justify-end  text-white hover:bg-slate-500 '>x</button>
+                <button onClick={() => setfirst(!first)} className='text-[1rem] flex justify-end  text-white hover:bg-slate-500 '>cerrar con doble click</button>
             </div>
             <div className={`${first && "z-[900]" } estilos_section`} >
                 <div className='estilosCarrusel'>
