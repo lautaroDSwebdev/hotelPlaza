@@ -5,7 +5,11 @@
 :root {
   
 }
-
+.texto-gradiente{
+  background: linear-gradient(rgb(255, 255, 255),rgb(96, 104, 182));
+  -webkit-background-clip: text;
+  color: transparent; 
+}
 .size-img{
   height: auto;
   width: 300px;
@@ -21,4 +25,10 @@
 body {
   font-family:Roboto , sans-serif;
   background: #fff;
+}
+
+.size-img-gallery{
+  height: auto;
+  width: 70px;
+  /* padding: 1rem; */
 }

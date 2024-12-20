@@ -17,7 +17,7 @@ const Navbar = () => {
         <nav className="flex gap-3">
           {Navdata.map((e) => (
             <div key={e.id} className={``}>
-              <Link className={`text-[1.2rem] text-[#6e70e2]`} href={e.href}>{e.text} </Link>
+              <Link className={`text-[1.2rem] hover:text-[#6e70e2] text-[#5cd5eb]`} href={e.href}>{e.text} </Link>
             </div>
           ))}
         </nav>

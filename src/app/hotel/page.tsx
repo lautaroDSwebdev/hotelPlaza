@@ -1,32 +1,46 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import "./style.css"
 import Link from 'next/link'
+import { appData } from '@/mock'
+import { ImageGallerySection } from '@/components/image_gallery/index'
+import Carrusel from '@/components/carruselImagenes/Carrusel'
 const page = () => {
+
+  let { presentacion } = appData.hotel,
+     {title} = appData.hotel
+     
+     
   return (
-    <div className="home-bg">
-      <div className='capa_oscura'>
-      </div>
-      <section className=' relative top-[8vh] max-with-viewp bg-[#ffffff31] h-fit rounded-md '>
-        <div className='flex flex-col gap-2'>
-          <h1 className='text-white text-center texto-gradiente font-bold text-[3rem]'>Bienvenidos</h1>
-          <div className='flex gap-[7.25rem] justify-center div_p'>
-
-            <p className='  '>El <i className='text-yellow-300'>Plaza Hotel</i>  está ubicado estratégicamente en el corazón de la ciudad de Tandil. Esta ubicación -frente a la plaza central- le permite a los pasajeros una rápida conexión con los paseos típicos de la ciudad, el casino, el lago, las sierras aledañas, los campos de Golf y los lugares de esparcimiento que Tandil brinda</p>
-            <p className=' '>La cordial atención que se brinda en el Plaza Hotel está garantizada por la profesionalidad del personal; combinada con la supervisión de sus propietarios, garantizando una placentera estadía en Tandil con un trato ameno</p>
-          </div>
-          <div className='flex gap-[25rem] justify-center div_img'>
-            <Link href={`/spa`} className='hover:scale-110 transform transition .3s'>
-              <img src="../../assets/logo_spa.png" alt="" />
-            </Link>
-            <Link href={`/ubicacion`} className='hover:scale-110 transform transition .3s'>
-              <img src="../../assets/logo_ubic.png" alt="" />
-            </Link>
-          </div>
+    <>
+      <div className="home-bg">
+        <div className='capa_oscura'>
         </div>
-      </section>
+        <article className='h-[47vh] flex items-center'>
 
+          <section className=' relative top-[8vh] max-with-viewp bg-[#ffffff31] h-fit rounded-md '>
+            <div className='flex flex-col gap-2'>
+              <h1 className='text-white text-center texto-gradiente font-bold text-[3rem]'>Bienvenidos</h1>
+              <div className='flex gap-[7.25rem] justify-center div_p'>
+                <p className='  '><i className={`${"text-yellow-300"}`}>{title}</i>{presentacion[0]}</p>
+                <p className=' '>{presentacion[1]}</p>
+              </div>
+              <div className='flex gap-[25rem] justify-center div_img'>
+                <Link href={`/spa`} className='hover:scale-110 transform transition .3s'>
+                  <img src="../../assets/logo_spa.png" alt="" />
+                </Link>
+                <Link href={`/ubicacion`} className='hover:scale-110 transform transition .3s'>
+                  <img src="../../assets/logo_ubic.png" alt="" />
+                </Link>
+              </div>
+            </div>
+          </section>
+        </article>
+      </div>
+      <ImageGallerySection />
+        
 
-    </div>
+    </>
   )
 }
 
