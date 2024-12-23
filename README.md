@@ -1,1 +1,3 @@
-Este proyecto es una mejora a la pagina ya existente de el hotel centrico de la ciudad de Tandil, prov de buenos aires, Hotel Plaza, la pagina original: https://www.plazahoteldetandil.com.ar/index.htm
+# Este proyecto es una mejora a la pagina ya existente de el hotel centrico de la ciudad de Tandil, prov de buenos aires, Hotel Plaza
+# Se esta construyendo con el framework Next Js
+# La pagina original: https://www.plazahoteldetandil.com.ar/index.htm
