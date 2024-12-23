@@ -1,10 +1,11 @@
 "use client"
-import { appData } from '@/mock';
+// import { appData } from '@/mock';
 import { useEffect, useState } from 'react'
 import "./style.css"
 
 function Carrusel({ setfirst, first, dataCarrusel }: any) {
-    let { imagenesHome } = appData
+    // let { dataCarrusel } = appData
+
     const [count, setCount] = useState(0)
 
     let value: ReturnType<typeof setTimeout>;
@@ -13,7 +14,7 @@ function Carrusel({ setfirst, first, dataCarrusel }: any) {
         // Si hace el autoplay, que al ejecutar la funcion no se trabe el carrusel
         // clearInterval(value)
         // si el contador es menor a el ultimo indice del array
-        if (count < imagenesHome.length - 1) {
+        if (count < dataCarrusel.length - 1) {
             setCount(count + 1)
         } else {
             setCount(0)
@@ -25,12 +26,12 @@ function Carrusel({ setfirst, first, dataCarrusel }: any) {
         if (count > 0) {
             setCount(count - 1)
         } else {
-            setCount(imagenesHome.length - 1)
+            setCount(dataCarrusel.length - 1)
         }
     }
     // const Autoplay = () => {
     //     // si el contador es menor a el ultimo indice del array
-    //     if (count < imagenesHome.length - 1) {
+    //     if (count < dataCarrusel.length - 1) {
     //         setCount(count + 1)
     //     } else {
     //         setCount(0)
@@ -51,9 +52,9 @@ function Carrusel({ setfirst, first, dataCarrusel }: any) {
             <div className={`${first && "z-[900]" } estilos_section`} >
                 <div className='estilosCarrusel'>
                     <ul className='text-center'>
-                        <b>{imagenesHome[count].id}/</b><b>{imagenesHome.length}</b>
+                        <b>{dataCarrusel[count].id}/</b><b>{dataCarrusel.length}</b>
                     </ul>
-                    <img className='cursor-pointer ' onClick={ArrowNext} src={imagenesHome[count].url} alt="imagenes" />
+                    <img className='cursor-pointer ' onClick={ArrowNext} src={dataCarrusel[count].url} alt="imagenes" />
                 </div>
 
                 <div className={`${first && "z-[900]" } div_botones`}>

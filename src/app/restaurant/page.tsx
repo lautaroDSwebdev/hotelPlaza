@@ -1,8 +1,12 @@
-import React from 'react'
-
+"use client"
+import Restaurant from '@/components/restaurant/Restaurant'
 const page = () => {
+     
+     
   return (
-    <div>page</div>
+    <>
+     <Restaurant/>
+    </>
   )
 }
 

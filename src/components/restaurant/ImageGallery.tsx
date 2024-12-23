@@ -1,11 +1,8 @@
 "use client"
-import { appData } from '@/mock/index'
 import React, { useState } from 'react'
-import Carrusel from '../carruselImagenes/Carrusel'
-interface TypeData{
-    id?: number
-    url?: string
-}
+import { TypeData } from '@/types/tipos'
+import Carrusel from './Carrusel'
+
 export const ImageGallerySection = ({data}: {data: TypeData[]}) => {
     console.log("De acá se esta recibiendo la data")
     console.log(data)
@@ -27,7 +24,7 @@ export const ImageGallerySection = ({data}: {data: TypeData[]}) => {
                 // aca intento hacer una transicion de opacidad
                     <div className='transition-all duration-1000 ease-in-out'>
 
-                        <Carrusel setfirst={setfirst} first={first} />
+                        <Carrusel dataCarrusel={data}  setfirst={setfirst} first={first} />
                     </div>
                     : null
             }

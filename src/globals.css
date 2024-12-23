@@ -32,3 +32,81 @@ body {
   width: 70px;
   /* padding: 1rem; */
 }
+/* Estilos del carrusel */
+
+.estilos_section{
+  inset: 0;
+  position: absolute;
+  height: fit-content;
+  background: #ffffff;
+  margin: 0 auto;
+  max-width: 882px;
+  width: 100%;
+  border-radius: 5px;
+  top: 10rem;
+}
+.div_botones{
+  display: flex;
+  position: absolute;
+  top: 15rem;
+  left: 12px;
+  right: 12px;
+  margin: auto;
+  justify-content: space-between;
+  font-size: 25px;
+  button{
+    cursor: pointer;
+    &:hover{
+      transform: scale(1.2);
+      color: rgb(219, 206, 23);
+
+    }
+  }
+}
+.estilosCarrusel{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  p{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  img{
+    padding: 1rem;
+    height: auto;
+    width: 776px;
+    margin: auto;
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+}
+.div_buttons_yellow{
+  position: relative;
+  top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 200px;
+  margin: auto;
+  .buttons_slider{
+    border: none;
+    cursor: pointer;
+    height: 5px;
+    width: 30px;
+    background: #e0dd2f;
+    border-radius: 3px;
+  }
+  .buttons_slider_off{
+    cursor: pointer;
+    border: none;
+    height: 5px;
+    width: 30px;
+    background: #777638;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+}
