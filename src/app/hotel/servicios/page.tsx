@@ -1,10 +1,13 @@
 import React from 'react'
 import "./style.css"
+import Servicios from '@/components/servicios/Servicios'
+import { appData } from '@/mock'
 const page = () => {
+  let { servicios } = appData.imagenesFondoVistas
   return (
-    <div className="bg-image">
-    <div className='style-brightness'></div>
-      
+    <div className={`bg-image  `}>
+      <div className='style-brightness'></div>
+      <Servicios />
     </div>
   )
 }

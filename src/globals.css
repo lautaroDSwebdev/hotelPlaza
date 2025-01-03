@@ -110,3 +110,33 @@ body {
     
   }
 }
+.home-bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 63vh;
+  position: relative;
+}
+
+.capa_oscura {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(1px);
+  filter: brightness(0.5);
+}
+.div_p{
+  p{
+    font-size: 18px;
+    max-width: 373px;
+    color: #fff;
+    /* font-weight: bolder; */
+  }
+}
+.div_img{
+  /* height: 10vh; */
+  img{
+    height: auto;
+    width: 100px;
+  }
+}

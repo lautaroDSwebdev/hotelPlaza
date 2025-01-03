@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description:
     "Tandil Hotel Plaza de Tandil con categoria de 3 estrellas, restaurant, cocina internacional, salones de convenciones, conferencias y usos multiples",
   icons: {
-    icon: "../assets/icono.ico",
+    icon: "./icono.ico",
   },
 };
 

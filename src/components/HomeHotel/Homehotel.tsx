@@ -5,11 +5,12 @@ import Link from 'next/link'
 import "./style.css"
 export const Homehotel = () => {
     let { presentacion } = appData.hotel,
-        { title } = appData.hotel
-        let { imagenesHome } = appData
+        { title } = appData.hotel,
+         { imagenesHome } = appData
+        //  let {home} = appData.imagenesFondoVistas
     return (
         <div>
-            <div className="home-bg">
+            <div   className={` home-bg`}>
                 <div className='capa_oscura'>
                 </div>
                 <article className='h-[47vh] flex items-center'>
@@ -22,10 +23,10 @@ export const Homehotel = () => {
                             </div>
                             <div className='flex gap-[25rem] justify-center div_img'>
                                 <Link href={`/spa`} className='hover:scale-110 transform transition .3s'>
-                                    <img src="../../assets/logo_spa.png" alt="" />
+                                    <img src="./logo_spa.png" alt="" />
                                 </Link>
                                 <Link href={`/ubicacion`} className='hover:scale-110 transform transition .3s'>
-                                    <img src="../../assets/logo_ubic.png" alt="" />
+                                    <img src="./logo_ubic.png" alt="" />
                                 </Link>
                             </div>
                         </div>

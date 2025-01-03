@@ -1,11 +1,9 @@
 "use client"
-// import { appData } from '@/mock';
 import { useEffect, useState } from 'react'
-// import "./style.css"
 
 function Carrusel({ setfirst, first, dataCarrusel }: any) {
-    // let { dataCarrusel } = appData
-
+    console.log("Por acá se recibe lo del carrusel de salon")
+    console.log(dataCarrusel)
     const [count, setCount] = useState(0)
 
     let value: ReturnType<typeof setTimeout>;

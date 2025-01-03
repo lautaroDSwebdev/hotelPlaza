@@ -1,9 +1,18 @@
 import { text } from "stream/consumers";
 
-export let appData = {
+export const appData = {
     logo_img: {
-        url: "../assets/logo-pagina.png"
+        url: "./logo-pagina.png"
     },
+    imagenesFondoVistas:{
+        habitacion: "./img_habit.jpg",
+        salonimg: "./img_salones.jpg",
+        restaurant: "./img_restaurant.jpg",
+        servicios: "./img_servicios.jpg",
+        home: "./homepageimg.jpg",
+        reservas: "./img_servicios.jpg"
+    },
+    
     hotel: {
         title: "El Plaza Hotel ",
         presentacion: [
@@ -21,60 +30,133 @@ export let appData = {
         imagenesRestaurant: [
             {
                 id: 1,
-                url: "../assets/restaurant01.jpg",
+                url: "./restaurant01.jpg",
             },
             {
                 id: 2,
-                url: "../assets/restaurant02.jpg",
+                url: "./restaurant02.jpg",
             },
             {
                 id: 3,
-                url: "../assets/restaurant03.jpg",
+                url: "./restaurant03.jpg",
             },
             {
                 id: 4,
-                url: "../assets/restaurant04.jpg",
+                url: "./restaurant04.jpg",
             },
             {
                 id: 5,
-                url: "../assets/restaurant05.jpg",
+                url: "./restaurant05.jpg",
             },
             {
                 id: 6,
-                url: "../assets/restaurant06.jpg",
+                url: "./restaurant06.jpg",
             },
         ]
     },
+    salon: {
+        texts: [
+            "Sala de reuniones",
+            "El Plaza Hotel le ofrece una cómoda Sala de Reuniones con capacidad de hasta 50 personas, siendo el medio ideal para llevar a cabo: Congresos y Convenciones, Lanzamientos de productos, Comercialización de los mismos, Rondas de negocios, Entrenamiento laboral, Seminarios de actualización, Fiestas Cualquier otro evento que su empresa requiera."
+        ],
+        imagenesSalon: [
+            {
+                id: 1,
+                url: "./salon01.jpg",
+            },
+            {
+                id: 2,
+                url: "./salon02.jpg",
+            },
+
+            {
+                id: 3,
+                url: "./salon04.jpg",
+            },
+            {
+                id: 4,
+                url: "./salon05.jpg",
+            },
+
+        ]
+    },
+    servicios: {
+
+        descripcionTop: [
+            "El Plaza Hotel es una excelente opción para descansar o bien para su viaje de negocios dado que se encuentra en el centro de Tandil",
+
+        ],
+        descripcionBottom: {
+            firts_column: [
+                { id: 1, text: "Desayuno Buffet" },
+                { id: 2, text: "Room service las 24 hs" },
+                { id: 3, text: "Confitería / Snack bar las 24 hs." },
+                { id: 4, text: "Servicio de telefonía con DDN y DDI" },
+                { id: 5, text: "Internet WiFi" },
+                { id: 6, text: "Recepción y envío de fax" },
+                { id: 7, text: "Servicio de lavandería y tintorería" },
+                { id: 8, text: "Sala de estar en el lobby" },
+                { id: 9, text: "Ambiente climatizado" },
+                { id: 10, text: "Baby Sitter" },
+                { id: 11, text: "Ascensores" },
+                { id: 12, text: "Caja de seguridad" }
+            ],
+            secondColumn:[
+                
+                { id: 1, text: "Area médica protegida las 24 hs" },
+                { id: 2, text: "Cocheras cubiertas." },
+                { id: 3, text: "Traslados" },
+                { id: 4, text: "Acceso gratuito al SPA y Piscina (no incluye sesión de masajes)" },
+                { id: 5, text: "Servicios internos opcionales:" },
+                { id: 6, text: "Restaurant a la carta" },
+                { id: 7, text: "SnackBar" },
+                { id: 8, text: "Sala de Reuniones" },
+                { id: 9, text: "Masajes en nuestro SPA" }
+            ],
+            thirdColumn:[
+                { id: 1, text: "Visitas guiadas y citi tours." },
+                { id: 2, text: "Cabalgatas y vuelos turísticos" },
+                { id: 3, text: "Caminatas nocturnas por los cerros" },
+                { id: 4, text: "Circuitos en cuatriciclos" },
+                { id: 5, text: "Trekking, escalada, rapel, cicloturismo" },
+                { id: 6, text: "Asados campestres." },
+                { id: 7, text: "Cines y teatros." },
+                { id: 8, text: "Casino." }
+            ]
+        },
+    },
+
+
     imagenesHome: [
-        // ../assets/
-        // ../../public/assets/
+        // ./
+        // ../../publi/
         {
             id: 1,
-            url: "../assets/home_hotel.jpg",
+            url: "./home_hotel.jpg",
         },
         {
             id: 2,
-            url: "../assets/home_hotel2.jpg",
+            url: "./home_hotel2.jpg",
         },
         {
             id: 3,
-            url: "../assets/home_hotel3.jpg",
+            url: "./home_hotel3.jpg",
         },
         {
             id: 4,
-            url: "../assets/home_interior_hotel.jpg",
+            url: "./home_interior_hotel.jpg",
         },
         {
             id: 5,
-            url: "../assets/home_interior_hotel2.jpg",
+            url: "./home_interior_hotel2.jpg",
         },
         {
             id: 6,
-            url: "../assets/home_interior_hotel3.jpg",
+            url: "./home_interior_hotel3.jpg",
         },
         {
             id: 7,
-            url: "../assets/home_perro.jpg",
+            url: "./home_perro.jpg",
         }
     ]
 

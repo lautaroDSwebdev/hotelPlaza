@@ -3,10 +3,10 @@
 import { Homehotel } from "@/components/HomeHotel/Homehotel"
 
 const page = () => {
-     
+
   return (
     <>
-     <Homehotel/>
+      <Homehotel/>
     </>
   )
 }

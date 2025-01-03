@@ -28,18 +28,3 @@
 }
 
 
-.div_p{
-  p{
-    font-size: 18px;
-    max-width: 373px;
-    color: #fff;
-    /* font-weight: bolder; */
-  }
-}
-.div_img{
-  /* height: 10vh; */
-  img{
-    height: auto;
-    width: 100px;
-  }
-}
