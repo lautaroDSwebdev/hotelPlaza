@@ -1,8 +1,9 @@
+import { Spa } from '@/components/spa/Spa'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>page</div>
+    <Spa />
   )
 }
 

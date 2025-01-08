@@ -6,7 +6,7 @@ import "./style.css"
 export const Homehotel = () => {
     let { presentacion } = appData.hotel,
         { title } = appData.hotel,
-         { imagenesHome } = appData
+            { imagenesHome } = appData
         //  let {home} = appData.imagenesFondoVistas
     return (
         <div>

@@ -8,7 +8,6 @@ export default function HotelLayout({
     <div className="">
         <NavHotelpage />
         <section>{children}</section>
-        
     </div>
   );
 }

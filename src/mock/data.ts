@@ -4,7 +4,7 @@ export const appData = {
     logo_img: {
         url: "./logo-pagina.png"
     },
-    imagenesFondoVistas:{
+    imagenesFondoVistas: {
         habitacion: "./img_habit.jpg",
         salonimg: "./img_salones.jpg",
         restaurant: "./img_restaurant.jpg",
@@ -12,7 +12,7 @@ export const appData = {
         home: "./homepageimg.jpg",
         reservas: "./img_servicios.jpg"
     },
-    
+
     hotel: {
         title: "El Plaza Hotel ",
         presentacion: [
@@ -80,6 +80,83 @@ export const appData = {
 
         ]
     },
+    cafeteria: {
+        imagenCafeteria: "./img_cafeteria.jpg",
+        text: {
+            data: "La Cafetería del Plaza Hotel, abierta a todo el público, le propone disfrutar del exquisito café recién molido en un desayuno inigualable con una imponente vista de la plaza central. El vermouth cerca del mediodía o la cerveza por la tardecita será el deleite en una reunión con amigos. Y por la noche... tragos largos y el afamado whisky."
+        },
+        imagenesCafe: [
+            {
+                id: 1,
+                url: "./bar01.jpg"
+            },
+            {
+                id: 2,
+                url: "./bar02.jpg"
+            },
+            {
+                id: 3,
+                url: "./bar03.jpg"
+            },
+            {
+                id: 4,
+                url: "./spa04.jpg"
+            },
+            {
+                id: 5,
+                url: "./bar05.jpg"
+            },
+            {
+                id: 6,
+                url: "./bar06.jpg"
+            },
+            
+    
+        ],
+    },
+    spa: {
+        imagenSpa: "./img_spa.jpg",
+        imagenesSpa: [
+            {
+                id: 1,
+                url: "./spa01.jpg"
+            },
+            {
+                id: 2,
+                url: "./spa02.jpg"
+            },
+            {
+                id: 3,
+                url: "./spa03.jpg"
+            },
+            {
+                id: 4,
+                url: "./spa04.jpg"
+            },
+            {
+                id: 5,
+                url: "./spa05.jpg"
+            },
+            {
+                id: 6,
+                url: "./spa06.jpg"
+            },
+            {
+                id: 7,
+                url: "./spa07.jpg"
+            },
+            {
+                id: 8,
+                url: "./spa08.jpg"
+            },
+            {
+                id: 9,
+                url: "./spa09.jpg"
+            },
+
+        ]
+    },
+
     servicios: {
 
         descripcionTop: [
@@ -101,8 +178,8 @@ export const appData = {
                 { id: 11, text: "Ascensores" },
                 { id: 12, text: "Caja de seguridad" }
             ],
-            secondColumn:[
-                
+            secondColumn: [
+
                 { id: 1, text: "Area médica protegida las 24 hs" },
                 { id: 2, text: "Cocheras cubiertas." },
                 { id: 3, text: "Traslados" },
@@ -113,7 +190,7 @@ export const appData = {
                 { id: 8, text: "Sala de Reuniones" },
                 { id: 9, text: "Masajes en nuestro SPA" }
             ],
-            thirdColumn:[
+            thirdColumn: [
                 { id: 1, text: "Visitas guiadas y citi tours." },
                 { id: 2, text: "Cabalgatas y vuelos turísticos" },
                 { id: 3, text: "Caminatas nocturnas por los cerros" },

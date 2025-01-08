@@ -5,7 +5,7 @@ import Carrusel from './Carrusel'
 
 export const ImageGallerySection = ({data}: {data: TypeData[]}) => {
     console.log("De acá se esta recibiendo la data de Salon imagenes")
-    console.log(data)
+    // console.log(data)
     const [first, setfirst] = useState(false)
     return (
         <section className='  h-[11vh] bg-[#ffe139]'>
