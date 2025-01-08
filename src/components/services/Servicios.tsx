@@ -14,7 +14,7 @@ const Servicios = () => {
                 </div>
                 <article className='h-[47vh] flex items-center'>
 
-                    <section className=' relative top-[8vh] max-with-viewp bg-[#ffffff31] h-fit rounded-md '>
+                    <section className=' relative top-[8vh] max-with-viewp g-paragraph-bg h-fit rounded-md '>
                         <div className='flex flex-col gap-2'>
                             <h1 className='text-white text-center texto-gradiente font-bold text-[3rem]'>Servicios</h1>
                             <div className='flex gap-[7.25rem] justify-center div_p'>

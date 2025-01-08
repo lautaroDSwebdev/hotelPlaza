@@ -21,7 +21,10 @@
   background: #F7F7F2;
 }
 
-
+iframe{
+  width: 100%;
+  height: 70vh;
+}
 
 .texto-gradiente{
   background: linear-gradient(rgb(255, 255, 255),rgb(96, 104, 182));
@@ -35,7 +38,11 @@
 }
 
 .g-color-page{
-  background: #ebcd4a ;
+  background: #9b8833 ;
+}
+.g-paragraph-bg{
+  background:#ffffff31 ;
+  outline: #ffffff solid 5px;
 }
 .g-img-section {
   height: auto;
