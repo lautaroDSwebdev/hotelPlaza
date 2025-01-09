@@ -23,7 +23,6 @@ export const ImageGallerySection = ({data}: {data: TypeData[]}) => {
                 first ?
                 // aca intento hacer una transicion de opacidad
                     <div className='transition-all duration-1000 ease-in-out'>
-
                         <Carrusel dataCarrusel={data}  setfirst={setfirst} first={first} />
                     </div>
                     : null
