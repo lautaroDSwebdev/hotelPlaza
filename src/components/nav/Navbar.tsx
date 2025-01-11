@@ -7,7 +7,7 @@ import { useRouter } from "next/router";
 const Navbar = () => {
   let logo = appData.logo_img.url;
 
-  const { pathname } = location
+  // const { pathname } = location
 
     // const router = useRouter();
     
