@@ -17,7 +17,7 @@ const Navbar = () => {
     // };
 
   return (
-    <section className="max-w-[1000px] mx-auto p-[5px] flex justify-between  ">
+    <section className="max-with-viewp flex justify-between  ">
       <div>
         <Link href={`/hotel`}>
           <img src={logo} alt="imagen logo" />

@@ -4,7 +4,7 @@ import React from "react";
 const NavHotelpage = () => {
   return (
     <div className="  bg-[#6e70e2]">
-      <section className="max-width-viewp flex gap-2 justify-between">
+      <section className="max-w-[1000px] mx-auto p-[5px] flex gap-2 justify-between">
         {sub_nav.map((e) => (
           <nav
             className="hover:scale-110 transition-all .3s ease-in"
