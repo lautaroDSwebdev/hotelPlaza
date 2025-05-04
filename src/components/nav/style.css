@@ -10,3 +10,63 @@
 .border-side{
     border-right: #979393 solid 1px;
 }
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+  }
+  .hover-underline-animation.center::after {
+    transform-origin: bottom center;
+  }
+  
+  .hover-underline-animation.center:hover::after {
+    transform-origin: bottom center;
+  }
+  .hover-underline-animation-click::after {
+    transform: scaleX(1);
+  }
+  .hover-underline-animation.center-click::after {
+    transform-origin: bottom center;
+  }
+  
+  .hover-underline-animation.center-click::after {
+    transform-origin: bottom center;
+  }
+  
+  .content {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .nav-desk{
+    display: none;
+    @media (width > 768px) {
+      display: flex; 
+      justify-content: space-between;
+      
+    }
+  }
+  .nav-mob{
+    display: none;
+    @media (width < 768px) {
+      display: flex; 
+      justify-content: space-between;
+      flex-direction: column;
+    }
+  }

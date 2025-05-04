@@ -1,4 +1,5 @@
-import NavHotelpage from "@/components/nav/NavHotelpage";
+import { Navbar } from "@/components/nav";
+
 export default function HotelLayout({
   children,
 }: Readonly<{
@@ -6,8 +7,7 @@ export default function HotelLayout({
 }>) {
   return (
     <div className="">
-        <NavHotelpage />
-        <section>{children}</section>
+       {children}
     </div>
   );
 }

@@ -1,0 +1,9 @@
+.spa-bg-image {
+  background-image: url('/img_spa.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 43vh;
+  position: relative;
+}

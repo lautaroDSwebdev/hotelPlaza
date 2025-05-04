@@ -1,41 +1,120 @@
 "use client";
-import { appData, Navdata } from "@/mock";
+import { appData, Navdata, sub_nav } from "@/mock";
 import Link from "next/link";
 import React from "react";
 import "./style.css"
-import { useRouter } from "next/router";
-const Navbar = () => {
-  let logo = appData.logo_img.url;
+import { usePathname } from "next/navigation";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger
+} from "../ui/dropdown-menu";
+import { GiHamburgerMenu } from "react-icons/gi";
+export const Navbar = () => {
+  let { url, urlMobile } = appData.logo_img;
 
-  // const { pathname } = location
 
-    // const router = useRouter();
-    
-    // // Define los estilos para cada ruta
-    // const buttonStyle = (path) => {
-    //     return router.pathname === path ? "text-[#2c4fee]" : "text-[#ffffff]";
-    // };
-
+  const path = usePathname()
   return (
-    <section className="max-with-viewp flex justify-between  ">
-      <div>
-        <Link href={`/hotel`}>
-          <img src={logo} alt="imagen logo" />
-        </Link>
-      </div>
-      <div className="flex items-end">
-        <nav className="flex gap-3 bg-[#ddcc35e1] p-2 rounded-xl">
-          {Navdata.map((e) => (
-            <div key={e.id} className={``}>
-              <Link 
-              className={`text-[1.2rem]  hover:text-[#5197e7]   text-[#ffffff] 
+    <>
+      <section className="max-with-viewp   nav-desk ">
+        <div>
+          <Link href={`/hotel`}>
+            <img src={url} alt="imagen logo" />
+          </Link>
+        </div>
+        <div className="flex items-end">
+          <nav className="flex gap-3 rounded-xl">
+            {Navdata.map((e) => (
+              <Link key={e.id}
+                className={`text-[1.2rem] font-extrabold hover-underline-animation ${path === e.href && "hover-underline-animation-click g-texto-bordenegro"}
               `} href={e.href}>{e.text} </Link>
-            </div>
-          ))}
-        </nav>
-      </div>
-    </section>
+            ))}
+            <DropdownMenu>
+              <DropdownMenuTrigger className=" ">
+                <GiHamburgerMenu />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuLabel>Mas del hotel</DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                {
+                  sub_nav.map(e => (
+                    <Link key={e.id} href={e.href} className={`text-[1.2rem] font-extrabold ${path === e.href && "text-white g-texto-bordenegro "}
+                    `}>
+                      <DropdownMenuItem >{e.text}</DropdownMenuItem>
+                    </Link>
+                  ))
+                }
+              </DropdownMenuContent>
+            </DropdownMenu>
+          </nav>
+        </div>
+      </section>
+
+      <section className="max-with-viewp  nav-mob">
+        <div className="flex justify-between items-center">
+          <Link href={`/hotel`}>
+            <img src={urlMobile} alt="imagen logo" />
+          </Link>
+          <DropdownMenu>
+            <DropdownMenuTrigger className=" ">
+              <GiHamburgerMenu />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuLabel>Mas del hotel</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              {
+                sub_nav.map(e => (
+                  <Link key={e.id} href={e.href} className={`text-[1.2rem] font-extrabold ${path === e.href && "text-white g-texto-bordenegro "}
+                    `}>
+                    <DropdownMenuItem >{e.text}</DropdownMenuItem>
+                  </Link>
+                ))
+              }
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
+        <div className="flex justify-center">
+          <nav className="flex gap-3 rounded-xl">
+            {Navdata.map((e) => (
+              <Link key={e.id}
+                className={`text-[10px] md:text-[1.2rem] font-extrabold hover-underline-animation ${path === e.href && "hover-underline-animation-click g-texto-bordenegro"}
+              `} href={e.href}>{e.text} </Link>
+            ))}
+            {/* <DropdownMenu>
+            <DropdownMenuTrigger className=" ">
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuLabel>Mas del hotel</DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              {
+                sub_nav.map(e => (
+                  <Link key={e.id} href={e.href} className={`text-[1.2rem] font-extrabold ${path === e.href && "text-white g-texto-bordenegro "}
+                `}>
+                    <DropdownMenuItem >{e.text}</DropdownMenuItem>
+                  </Link>
+                ))
+              }
+            </DropdownMenuContent>
+          </DropdownMenu> */}
+          </nav>
+        </div>
+      </section>
+    </>
+
   );
 };
 
-export default Navbar;
+
+
+{/* <div>
+  <div>
+    <h3>Left:</h3>
+    <p class="hover-underline-animation left">Hover this text to see the effect!</p>
+  </div> 
+  </div> 
+  
+  */}

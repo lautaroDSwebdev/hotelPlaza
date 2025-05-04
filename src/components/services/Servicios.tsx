@@ -3,54 +3,57 @@ import React from 'react'
 import "./style.css"
 const Servicios = () => {
 
-    let { servicios } = appData,
-        data = servicios.descripcionTop,
-        { firts_column, secondColumn, thirdColumn } = servicios.descripcionBottom
+    let { servicios } = appData
+        
+
+
+
+    // Servicios.
+
+    // El Plaza Hotel es una excelente opción para descansar o bien para su viaje de negocios dado que se encuentra en el centro de Tandil.
+
+    // · Desayuno Buffet
+    // · Room service las 24 hs
+    // · Confitería / Snack bar las 24 hs.
+    // · Servicio de telefonía con DDN y DDI
+    // · Internet WiFi
+    // · Recepción y envío de fax
+    // · Servicio de lavandería y tintorería
+    // · Sala de estar en el lobby
+    // · Ambiente climatizado
+    // · Baby Sitter
+    // · Ascensores
+    // · Caja de seguridad	
+    // · Area médica protegida las 24 hs.
+    // · Cocheras cubiertas.
+    // · Traslados
+    // · Acceso gratuito al SPA y Piscina
+    //   (no incluye sesión de masajes)
+
+
+    // Servicios internos opcionales:
+    // · Restaurant a la carta
+    // · SnackBar
+    // · Sala de Reuniones
+    // · Masajes en nuestro SPA
+
+    // Servicios externos opcionales:
+
+    // · Visitas guiadas y citi tours.
+    // · Cabalgatas y vuelos turísticos
+    // · Caminatas nocturnas por los cerros
+    // · Circuitos en cuatriciclos
+    // · Trekking, escalada, rapel, cicloturismo
+    // · Asados campestres.
+    // · Cines y teatros.
+    // · Casino.
 
     return (
         <>
-            <div className="home-bg">
-                <div className='capa_oscura'>
-                </div>
-                <article className='h-[47vh] flex items-center'>
-                    <div className='g-max-w-pages'>
+            <div className="">
 
-                        <section className=' relative top-[8vh] max-with-viewp g-paragraph-bg h-fit rounded-md '>
-                            <div className='flex flex-col gap-2'>
-                                <h1 className='text-white text-center texto-gradiente font-bold text-[3rem]'>Servicios</h1>
-                                <div className='flex gap-[7.25rem] justify-center div_p'>
-                                    <p className='text-white text-[1.2rem] '>{data[0]}</p>
-                                </div>
 
-                                <div className='flex gap-[7.25rem] justify-center relative pt-4'>
-                                    <ul className='text-white '>
-                                        {
-                                            firts_column.map(e => (
-                                                <li key={e.id}>{e.text}  </li>
-                                            ))
-                                        }
-                                    </ul>
-                                    <ul className='text-white '>
-                                        {
-                                            secondColumn.map(e => (
-                                                <li key={e.id}>{e.text}  </li>
-                                            ))
-                                        }
-                                    </ul>
-                                    <ul className='text-white '>
-                                        {
-                                            thirdColumn.map(e => (
-                                                <li key={e.id}>{e.text}  </li>
-                                            ))
-                                        }
-                                    </ul>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </article>
             </div>
-            {/* <ImageGallerySection data={imagenesRestaurant} /> */}
         </>
     )
 }

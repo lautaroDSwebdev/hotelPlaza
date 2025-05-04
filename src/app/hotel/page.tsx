@@ -4,11 +4,9 @@ import { Homehotel } from "@/components/HomeHotel/Homehotel"
 
 const page = () => {
 
-  return (
-    <>
-      <Homehotel/>
-    </>
-  )
+  return <Homehotel></Homehotel>
+
+  
 }
 
 export default page

@@ -1,39 +1,26 @@
 import React from 'react'
-import { ImageGallerySection } from '../image_gallery'
 import { appData } from '@/mock/index'
 import Link from 'next/link'
 import "./style.css"
+import { Grid } from '@/reutilizable'
+import Image from 'next/image'
 export const Homehotel = () => {
-    let { presentacion } = appData.hotel,
-        { title } = appData.hotel,
-            { imagenesHome } = appData
-        //  let {home} = appData.imagenesFondoVistas
+    let { imagenesHome } = appData,
+        { imagehome} = appData.hotel
     return (
         <div>
-            <div   className={` home-bg`}>
-                <div className='capa_oscura'>
+            <article className='g-height-header max-with-viewp'>
+                <img className='g-image-header' src={imagehome} alt='imagen home' />
+                <h1 className='flex justify-center text-[3rem] font-bold'>Bienvenidos</h1>
+                <div className='p-[2rem] '>
+                    <p className=''><i className="">El Plaza Hotel</i> está ubicado estratégicamente en el corazón de la ciudad de Tandil. Esta ubicación -frente a la plaza central le permite a los pasajeros una rápida conexión con los paseos típicos de la ciudad, el casino, el lago, las sierras aledañas, los campos de Golf y los lugares de esparcimiento que Tandil brinda</p>
+                    <p className=' '>La cordial atención que se brinda en el Plaza Hotel está garantizada por la profesionalidad del personal; combinada con la supervisión de sus propietarios, garantizando una placentera estadía en Tandil con un trato ameno</p>
                 </div>
-                <article className='h-[47vh] flex items-center'>
-                    <section className=' relative top-[8vh] max-with-viewp bg-[#ffffff31] h-fit rounded-md '>
-                        <div className='flex flex-col gap-2'>
-                            <h1 className='text-white text-center texto-gradiente font-bold text-[3rem]'>Bienvenidos</h1>
-                            <div className='flex gap-[7.25rem] justify-center div_p'>
-                                <p className='  '><i className={`${"text-yellow-300"}`}>{title}</i>{presentacion[0]}</p>
-                                <p className=' '>{presentacion[1]}</p>
-                            </div>
-                            <div className='flex gap-[25rem] justify-center div_img'>
-                                <Link href={`/spa`} className='hover:scale-110 transform transition .3s'>
-                                    <img src="./logo_spa.png" alt="" />
-                                </Link>
-                                <Link href={`/ubicacion`} className='hover:scale-110 transform transition .3s'>
-                                    <img src="./logo_ubic.png" alt="" />
-                                </Link>
-                            </div>
-                        </div>
-                    </section>
-                </article>
-            </div>
-            <ImageGallerySection data={imagenesHome} />
+                <div className='flex justify-center'>
+                    <button className='g-color-page g-b-radius-btn'>Ver galeria</button>
+                </div>
+            </article>
+            <Grid data={imagenesHome} />
         </div>
     )
 }

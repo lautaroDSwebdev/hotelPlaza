@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist } from "next/font/google";
 import "../globals.css";
-import Navbar from "@/components/nav/Navbar";
 import FotterComponent from "@/components/fotter/Fotter";
+import { Navbar } from "@/components/nav";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description:
     "Tandil Hotel Plaza de Tandil con categoria de 3 estrellas, restaurant, cocina internacional, salones de convenciones, conferencias y usos multiples",
   icons: {
-    icon: "./icono.ico",
+    icon: "./iconoPH.ico",
   },
 };
 

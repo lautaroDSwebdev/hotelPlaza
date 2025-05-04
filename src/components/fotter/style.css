@@ -1,47 +1,43 @@
+:root{
+  --height: auto;
+  --width: 27px;
+}
 footer {
-    background-color: #222;
-    color: #fff;
-    padding: 5px;
-    position: fixed;
-    right: 0;
-    left: 0;
-    bottom: 0;
+  background-color: #7CD0C8;
+  color: #fff;
+  height: 14vh;
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 84rem;
+  b{
+    color: #000;
   }
-  
-  .footer-container {
+  section{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    justify-content: center;
+    gap: 1rem;
+    div{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .ig, .wsp, .mail, .loc{
+    fill: black;
+    color: #000;
+    width: var(--width);
+    height: var(--height);
   }
   
-  .footer-logo img {
-   height: auto;
-   width: 4rem;
+  .facebk{
+    color: #000;
+    width: var(--width);
+    height: var(--height);
+
   }
-  
-  .footer-social ul {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-social ul li {
-    display: inline-block;
-  }
-  
-  .footer-social ul li a {
-    color: #fff;
-    font-size: 18px;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-social ul li a:hover {
-    color: #1da1f2; /* Cambia el color al pasar el mouse */
-  }
-  
+}
+

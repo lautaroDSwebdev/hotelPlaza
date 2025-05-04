@@ -5,8 +5,8 @@ import { appData } from '@/mock'
 const page = () => {
   let { servicios } = appData.imagenesFondoVistas
   return (
-    <div className={`bg-image  `}>
-      <div className='style-brightness'></div>
+    <div className={` `}>
+      
       <Servicios />
     </div>
   )

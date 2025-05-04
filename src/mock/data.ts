@@ -1,18 +1,19 @@
 
 export const appData = {
     logo_img: {
-        url: "./logo-pagina.png"
+        url: "./logo-pagina.png",
+        urlMobile: "./iconoPH.ico"
     },
     imagenesFondoVistas: {
         habitacion: "./img_habit.jpg",
         salonimg: "./img_salones.jpg",
         restaurant: "./img_restaurant.jpg",
         servicios: "./img_servicios.jpg",
-        home: "./homepageimg.jpg",
         reservas: "./img_servicios.jpg"
     },
-
+    
     hotel: {
+        imagehome: "./homepageimg.jpg",
         title: "El Plaza Hotel ",
         presentacion: [
             " está ubicado estratégicamente en el corazón de la ciudad de Tandil. Esta ubicación -frente a la plaza central le permite a los pasajeros una rápida conexión con los paseos típicos de la ciudad, el casino, el lago, las sierras aledañas, los campos de Golf y los lugares de esparcimiento que Tandil brinda",
@@ -204,8 +205,6 @@ export const appData = {
 
 
     imagenesHome: [
-        // ./
-        // ../../publi/
         {
             id: 1,
             url: "./home_hotel.jpg",

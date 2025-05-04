@@ -1,13 +1,5 @@
 
-.home-bg {
-  background-image: url('../../assets/img_portada.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: scroll;
-  background-size: cover;
-  height: 63vh;
-  position: relative;
-}
+
 
 .capa_oscura {
   position: absolute;
@@ -21,14 +13,12 @@
   p{
     font-size: 18px;
     max-width: 373px;
-    color: #fff;
-    /* font-weight: bolder; */
+    color: #000000;
   }
 }
 .div_img{
-  /* height: 10vh; */
   img{
     height: auto;
-    width: 100px;
+    width: 148px;
   }
 }
