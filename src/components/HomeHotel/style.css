@@ -1,14 +1,6 @@
 
 
 
-.capa_oscura {
-  position: absolute;
-  inset: 0;
-  backdrop-filter: blur(1px);
-  filter: brightness(0.5);
-}
-
-
 .div_p{
   p{
     font-size: 18px;

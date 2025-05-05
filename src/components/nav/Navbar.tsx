@@ -42,7 +42,7 @@ export const Navbar = () => {
                 <DropdownMenuSeparator />
                 {
                   sub_nav.map(e => (
-                    <Link key={e.id} href={e.href} className={`text-[1.2rem] font-extrabold ${path === e.href && "text-white g-texto-bordenegro "}
+                    <Link key={e.id} href={e.href} className={`text-[1.2rem] font-extrabold ${path === e.href && "hover-underline-animation-click g-texto-bordenegro "}
                     `}>
                       <DropdownMenuItem >{e.text}</DropdownMenuItem>
                     </Link>
@@ -81,7 +81,7 @@ export const Navbar = () => {
           <nav className="flex gap-3 rounded-xl">
             {Navdata.map((e) => (
               <Link key={e.id}
-                className={`text-[10px] md:text-[1.2rem] font-extrabold hover-underline-animation ${path === e.href && "hover-underline-animation-click g-texto-bordenegro"}
+                className={`text-[10px] md:text-[1.2rem] font-extrabold hover-underline-animation ${path === e.href && "text-white g-texto-bordenegro"}
               `} href={e.href}>{e.text} </Link>
             ))}
             {/* <DropdownMenu>

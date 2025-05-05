@@ -3,13 +3,7 @@ import "./style.css"
 import Servicios from '@/components/services/Servicios'
 import { appData } from '@/mock'
 const page = () => {
-  let { servicios } = appData.imagenesFondoVistas
-  return (
-    <div className={` `}>
-      
-      <Servicios />
-    </div>
-  )
+  return <Servicios />
 }
 
 export default page

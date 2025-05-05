@@ -55,6 +55,7 @@ export const appData = {
         ]
     },
     salon: {
+        imagen_salon: "./img_salones.jpg",
         texts: [
             "Sala de reuniones",
             "El Plaza Hotel le ofrece una cómoda Sala de Reuniones con capacidad de hasta 50 personas, siendo el medio ideal para llevar a cabo: Congresos y Convenciones, Lanzamientos de productos, Comercialización de los mismos, Rondas de negocios, Entrenamiento laboral, Seminarios de actualización, Fiestas Cualquier otro evento que su empresa requiera."
@@ -158,49 +159,36 @@ export const appData = {
     },
 
     servicios: {
-
-        descripcionTop: [
-            "El Plaza Hotel es una excelente opción para descansar o bien para su viaje de negocios dado que se encuentra en el centro de Tandil",
-
-        ],
-        descripcionBottom: {
-            firts_column: [
-                { id: 1, text: "Desayuno Buffet" },
-                { id: 2, text: "Room service las 24 hs" },
-                { id: 3, text: "Confitería / Snack bar las 24 hs." },
-                { id: 4, text: "Servicio de telefonía con DDN y DDI" },
-                { id: 5, text: "Internet WiFi" },
-                { id: 6, text: "Recepción y envío de fax" },
-                { id: 7, text: "Servicio de lavandería y tintorería" },
-                { id: 8, text: "Sala de estar en el lobby" },
-                { id: 9, text: "Ambiente climatizado" },
-                { id: 10, text: "Baby Sitter" },
-                { id: 11, text: "Ascensores" },
-                { id: 12, text: "Caja de seguridad" }
-            ],
-            secondColumn: [
-
-                { id: 1, text: "Area médica protegida las 24 hs" },
-                { id: 2, text: "Cocheras cubiertas." },
-                { id: 3, text: "Traslados" },
-                { id: 4, text: "Acceso gratuito al SPA y Piscina (no incluye sesión de masajes)" },
-                { id: 5, text: "Servicios internos opcionales:" },
-                { id: 6, text: "Restaurant a la carta" },
-                { id: 7, text: "SnackBar" },
-                { id: 8, text: "Sala de Reuniones" },
-                { id: 9, text: "Masajes en nuestro SPA" }
-            ],
-            thirdColumn: [
-                { id: 1, text: "Visitas guiadas y citi tours." },
-                { id: 2, text: "Cabalgatas y vuelos turísticos" },
-                { id: 3, text: "Caminatas nocturnas por los cerros" },
-                { id: 4, text: "Circuitos en cuatriciclos" },
-                { id: 5, text: "Trekking, escalada, rapel, cicloturismo" },
-                { id: 6, text: "Asados campestres." },
-                { id: 7, text: "Cines y teatros." },
-                { id: 8, text: "Casino." }
-            ]
-        },
+        imagenServicios: "./img_servicios.jpg",
+        imgServicios: [
+            {
+                id: 1,
+                url: "./servicios01.jpg"
+            },
+            {
+                id: 2,
+                url: "./servicios02.jpg"
+            },
+           
+            {
+                id: 5,
+                url: "./bano.jpg"
+            },
+            {
+                id: 6,
+                url: "./restaurant02.jpg"
+            },
+            {
+                id: 7,
+                url: "./spa06.jpg"
+            },
+            {
+                id: 8,
+                url: "./spa07.jpg"
+            },
+            
+        ]
+        
     },
 
 
