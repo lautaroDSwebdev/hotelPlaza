@@ -81,7 +81,7 @@ export const Navbar = () => {
           <nav className="flex gap-3 rounded-xl">
             {Navdata.map((e) => (
               <Link key={e.id}
-                className={`text-[10px] md:text-[1.2rem] font-extrabold hover-underline-animation ${path === e.href && "text-white g-texto-bordenegro"}
+                className={`text-[13px] md:text-[1.2rem] font-extrabold hover-underline-animation ${path === e.href && "hover-underline-animation-click g-texto-bordenegro"}
               `} href={e.href}>{e.text} </Link>
             ))}
             {/* <DropdownMenu>
@@ -110,11 +110,3 @@ export const Navbar = () => {
 
 
 
-{/* <div>
-  <div>
-    <h3>Left:</h3>
-    <p class="hover-underline-animation left">Hover this text to see the effect!</p>
-  </div> 
-  </div> 
-  
-  */}
