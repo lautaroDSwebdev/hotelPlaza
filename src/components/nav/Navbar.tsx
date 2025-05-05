@@ -68,7 +68,7 @@ export const Navbar = () => {
               <DropdownMenuSeparator />
               {
                 sub_nav.map(e => (
-                  <Link key={e.id} href={e.href} className={`text-[1.2rem] font-extrabold ${path === e.href && "text-white g-texto-bordenegro "}
+                  <Link key={e.id} href={e.href} className={`text-[1.2rem] font-extrabold ${path === e.href && "hover-underline-animation-click g-texto-bordenegro "}
                     `}>
                     <DropdownMenuItem >{e.text}</DropdownMenuItem>
                   </Link>
