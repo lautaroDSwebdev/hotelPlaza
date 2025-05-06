@@ -5,65 +5,84 @@ import { Grid } from '@/reutilizable'
 const Servicios = () => {
 
     let { imagenServicios } = appData.servicios,
-        { imgServicios } = appData.servicios
+        { imgenesServicios } = appData.servicios
 
-
-
-
-    // Servicios.
-
-    // El Plaza Hotel es una excelente opción para descansar o bien para su viaje de negocios dado que se encuentra en el centro de Tandil.
-
-    // · Desayuno Buffet
-    // · Room service las 24 hs
-    // · Confitería / Snack bar las 24 hs.
-    // · Servicio de telefonía con DDN y DDI
-    // · Internet WiFi
-    // · Recepción y envío de fax
-    // · Servicio de lavandería y tintorería
-    // · Sala de estar en el lobby
-    // · Ambiente climatizado
-    // · Baby Sitter
-    // · Ascensores
-    // · Caja de seguridad	
-    // · Area médica protegida las 24 hs.
-    // · Cocheras cubiertas.
-    // · Traslados
-    // · Acceso gratuito al SPA y Piscina
-    //   (no incluye sesión de masajes)
-
-
-    // Servicios internos opcionales:
-    // · Restaurant a la carta
-    // · SnackBar
-    // · Sala de Reuniones
-    // · Masajes en nuestro SPA
-
-    // Servicios externos opcionales:
-
-    // · Visitas guiadas y citi tours.
-    // · Cabalgatas y vuelos turísticos
-    // · Caminatas nocturnas por los cerros
-    // · Circuitos en cuatriciclos
-    // · Trekking, escalada, rapel, cicloturismo
-    // · Asados campestres.
-    // · Cines y teatros.
-    // · Casino.
 
     return (
         <div>
             <article className='g-height-header max-with-viewp'>
-                <img className='g-image-header' src={imagenServicios} alt='imagen home' />
-                <h1 className='flex justify-center text-[3rem] font-bold'>Bienvenidos</h1>
+                <img className='g-image-header' src={imagenServicios} alt='Imagen Servicios' />
+                <h1 className='flex justify-center text-[3rem] font-bold'>Servicios</h1>
                 <div className='p-[2rem] '>
-                    <p className=''><i className="">El Plaza Hotel</i> está ubicado estratégicamente en el corazón de la ciudad de Tandil. Esta ubicación -frente a la plaza central le permite a los pasajeros una rápida conexión con los paseos típicos de la ciudad, el casino, el lago, las sierras aledañas, los campos de Golf y los lugares de esparcimiento que Tandil brinda</p>
-                    <p className=' '>La cordial atención que se brinda en el Plaza Hotel está garantizada por la profesionalidad del personal; combinada con la supervisión de sus propietarios, garantizando una placentera estadía en Tandil con un trato ameno</p>
+                    <h2 className=''> El Plaza Hotel es una excelente opción para descansar o bien para su viaje de negocios dado que se encuentra en el centro de Tandil.</h2>
                 </div>
+
+                <section className='flex  justify-between  p-[2rem] gap-[2rem]'>
+
+                    <ul>
+                        <li>Desayuno Buffet</li>
+                        <li>Room service las 24 hs</li>
+                        <li>Confitería / Snack bar las 24 hs.</li>
+                        <li>Servicio de telefonía con DDN y DDI</li>
+                        <li>
+                            Internet WiFi
+
+                        </li>
+                        <li>
+                            Recepción y envío de fax
+
+                        </li>
+                        <li>
+                            Servicio de lavandería y tintorería
+
+                        </li>
+                        <li>
+                            Sala de estar en el lobby
+
+                        </li>
+                        <li>
+                            Ambiente climatizado
+
+                        </li>
+                        <li>
+
+                            Baby Sitter
+                        </li>
+                        <li>
+                            Ascensores
+
+                        </li>
+                        <li>
+                            Caja de seguridad
+
+                        </li>
+                    </ul>
+                    <ul>
+                        <h3>Servicios internos y externos opcionales:</h3>
+                        <li>Restaurant a la carta</li>
+                        <li>SnackBar</li>
+                        <li>Sala de Reuniones</li>
+                        <li>Masajes en nuestro SPA</li>
+                        <li>Visitas guiadas y citi tours.</li>
+                        <li>Cabalgatas y vuelos turísticos</li>
+                        <li>Caminatas nocturnas por los cerros</li>
+                        <li>Circuitos en cuatriciclos</li>
+                        <li>Trekking, escalada, rapel, cicloturismo</li>
+                        <li>Asados campestres.</li>
+                        <li>Cines y teatros.</li>
+                        <li>Casino.</li>
+                    </ul>
+                </section>
+                <div className='p-[2rem]'>
+                    <h3>Reservas</h3>
+                    <p>La forma mas rápida para consultar disponibilidad, escríbanos por WhatsApp o por email, no olvide consignar fecha de ingreso y de salida, cantidad de personas y su nombre.</p>
+                </div>
+
                 <div className='flex justify-center'>
                     <button className='g-color-page g-b-radius-btn'>Ver galeria</button>
                 </div>
             </article>
-            <Grid data={imgServicios} />
+            <Grid data={imgenesServicios} />
         </div>
     )
 }
