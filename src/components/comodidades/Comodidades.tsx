@@ -1,5 +1,6 @@
 import { appData } from '@/mock'
 import { Grid } from '@/reutilizable'
+import { CarruselShadcn } from '@/reutilizable/CarruselShadcn'
 import React from 'react'
 
 export const Comodidades = () => {
@@ -14,9 +15,9 @@ export const Comodidades = () => {
                     <p className=''> El Restaurant del Plaza Hotel le ofrece diariamente un menú ejecutivo con opciones que usted podrá acomodar a sus horarios y reuniones de trabajo.</p>
                     <p className=' '>No solo los pasajeros del hotel pueden deleitarse con la cocina internacional propuesta por el chef ya que el restaurant es abierto al público en general y en su cálido ambiente usted podrá disfrutar -en familia o entre amigos- de una amplia gama de platos y las sugerencias para todos los gustos.</p>
                 </div>
-                
-                <div className='flex justify-center'>
-                    <button className='g-color-page g-b-radius-btn'>Ver galeria</button>
+                <div className="flex justify-center">
+
+                    <CarruselShadcn data={imagenesComodidades} />
                 </div>
             </article>
             <Grid data={imagenesComodidades} />

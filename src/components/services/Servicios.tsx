@@ -2,6 +2,7 @@ import { appData } from '@/mock'
 import React from 'react'
 import "./style.css"
 import { Grid } from '@/reutilizable'
+import { CarruselShadcn } from '@/reutilizable/CarruselShadcn'
 const Servicios = () => {
 
     let { imagenServicios } = appData.servicios,
@@ -77,9 +78,9 @@ const Servicios = () => {
                     <h3>Reservas</h3>
                     <p>La forma mas rápida para consultar disponibilidad, escríbanos por WhatsApp o por email, no olvide consignar fecha de ingreso y de salida, cantidad de personas y su nombre.</p>
                 </div>
+                <div className="flex justify-center">
 
-                <div className='flex justify-center'>
-                    <button className='g-color-page g-b-radius-btn'>Ver galeria</button>
+                    <CarruselShadcn data={imgenesServicios} />
                 </div>
             </article>
             <Grid data={imgenesServicios} />
