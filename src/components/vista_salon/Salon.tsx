@@ -10,7 +10,7 @@ const Salon = () => {
 
     return (
         <div>
-            <article className='g-height-header max-with-viewp'>
+            <article className='g-height-header max-with-viewp min-h-screen'>
                 <img className='g-image-header' src={imagen_salon} alt='imagen restoran' />
                 <h1 className='flex justify-center text-[3rem] font-bold'>Restaurant</h1>
                 <div className='p-[2rem] '>
