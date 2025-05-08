@@ -18,16 +18,16 @@ export const Homehotel = () => {
         <h1 className="flex justify-center text-[3rem] font-bold">
           Bienvenidos
         </h1>
-        <div className="p-[2rem] ">
-          <p className="">
-            <i className="">El Plaza Hotel</i> está ubicado estratégicamente en
+        <div className=" ">
+          <p className="g-paragrapg-size">
+            <b className="g-textgcolor-page">El Plaza Hotel</b> está ubicado estratégicamente en
             el corazón de la ciudad de Tandil. Esta ubicación -frente a la plaza
             central le permite a los pasajeros una rápida conexión con los
             paseos típicos de la ciudad, el casino, el lago, las sierras
             aledañas, los campos de Golf y los lugares de esparcimiento que
             Tandil brinda
           </p>
-          <p className=" ">
+          <p className="g-paragrapg-size">
             La cordial atención que se brinda en el Plaza Hotel está garantizada
             por la profesionalidad del personal; combinada con la supervisión de
             sus propietarios, garantizando una placentera estadía en Tandil con
@@ -39,8 +39,8 @@ export const Homehotel = () => {
 
           <CarruselShadcn data={imagenesHome}></CarruselShadcn>
         </div>
-      </article>
       <Grid data={imagenesHome} />
+      </article>
     </div>
   );
 };

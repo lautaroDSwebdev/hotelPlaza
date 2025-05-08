@@ -8,7 +8,7 @@ import { RiInstagramLine } from "react-icons/ri";
 import Link from 'next/link';
 const FotterComponent = () => {
   return (
-    <footer>
+    <footer className='g-bgcolor-page'>
       <section className='max-with-viewp'>
         <div>
           <a target='_blank' href="mailto:plazahoteltandil@gmail.com">

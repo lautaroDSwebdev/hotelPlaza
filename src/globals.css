@@ -16,6 +16,12 @@
 .g-powder-bg{
   background: #F7F7F2;
 }
+
+.g-paragrapg-size{
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 22px;
+}
 .div_grid-images{
   height: 50vh;
 }
@@ -27,6 +33,11 @@
   min-width: 320px;
   img{
     border-radius: 4px;
+  }
+  @media (width >750px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    
   }
   
 }
@@ -58,8 +69,11 @@ iframe{
   -webkit-text-stroke: 1px rgb(12, 11, 11);
   text-decoration: underline;
 } */
-.g-color-page{
+.g-bgcolor-page{
   background: #F8C301 ;
+}
+.g-textgcolor-page{
+  color: #F8C301 ;
 }
 
 

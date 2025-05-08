@@ -192,6 +192,34 @@ export const appData = {
     },
     comodidades: {
         imagenComodidades: "/img_habit.jpg",
+        imagenesComodidadesSinbaño: [
+            {
+                id: 1,
+                url: "/comodidades01.jpg"
+            },
+            {
+                id: 2,
+                url: "/comodidades02.jpg"
+            },
+
+            {
+                id: 3,
+                url: "/comodidades03.jpg"
+            },
+            {
+                id: 4,
+                url: "/comodidades04.jpg"
+            },
+            {
+                id: 5,
+                url: "/comodidades05.jpg"
+            },
+            
+            {
+                id: 7,
+                url: "/comodidades07.jpg"
+            },
+        ],
         imagenesComodidades: [
             {
                 id: 1,
@@ -221,7 +249,7 @@ export const appData = {
             {
                 id: 7,
                 url: "/comodidades07.jpg"
-            },
+            }
         ]
     },
 

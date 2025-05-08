@@ -11,7 +11,7 @@ interface Data {
 export const CarruselShadcn = ({ data }: { data: Data[] }) => {
     return (
         <Dialog>
-            <DialogTrigger className='g-btn-border-radius g-color-page'>Abrir galeria</DialogTrigger>
+            <DialogTrigger className='g-btn-border-radius g-bgcolor-page g-paragrapg-size'>Abrir galeria</DialogTrigger>
             <DialogContent>
                 <DialogHeader>
                     {/* <DialogTitle >
