@@ -2,6 +2,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import React from 'react'
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTrigger } from '@/components/ui/dialog'
 import { DialogTitle } from '@radix-ui/react-dialog'
+
 interface Data {
     id: number,
     url: string
@@ -13,18 +14,18 @@ export const CarruselShadcn = ({ data }: { data: Data[] }) => {
             <DialogTrigger className='g-btn-border-radius g-color-page'>Abrir galeria</DialogTrigger>
             <DialogContent>
                 <DialogHeader>
-                    <DialogTitle >
+                    {/* <DialogTitle >
                         Carrusel
                     </DialogTitle>
                     <DialogDescription >
                         displazate por el carrusel
-                    </DialogDescription>
+                    </DialogDescription> */}
                     <Carousel >
                         <CarouselContent>
                             {
                                 data.map(e => (
                                     <CarouselItem key={e.id}>
-                                        <img className="h-auto w-[900rem]" src={e.url} alt="imagen home" />
+                                        <img className="h-auto w-full" src={e.url} alt="imagen home" />
                                     </CarouselItem>
                                 ))
                             }
