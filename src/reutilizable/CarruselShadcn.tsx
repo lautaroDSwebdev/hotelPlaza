@@ -25,7 +25,7 @@ export const CarruselShadcn = ({ data }: { data: Data[] }) => {
                             {
                                 data.map(e => (
                                     <CarouselItem key={e.id}>
-                                        <img className="h-auto w-full" src={e.url} alt="imagen home" />
+                                        <img className="h-auto w-full rounded-md p-[1rem]" src={e.url} alt="imagen home" />
                                     </CarouselItem>
                                 ))
                             }
