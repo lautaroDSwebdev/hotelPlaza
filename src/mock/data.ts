@@ -54,6 +54,9 @@ export const appData = {
             },
         ]
     },
+    contacto: {
+        imagen_contacto: "/img_contacto.jpg",
+    },
     salon: {
         imagen_salon: "/img_salones.jpg",
         texts: [
@@ -282,7 +285,81 @@ export const appData = {
             id: 7,
             url: "/home_perro.jpg",
         }
+    ],
+    gallery: [
+        {
+            id: 1,
+            original: "/galeria1.jpg",
+            thumbnail: "/galeria1.jpg",
+        },
+        {
+            id: 2,
+            original: "/galeria2.jpg",
+            thumbnail: "/galeria2.jpg",
+        },
+        {
+            id: 3,
+            original: "/galeria3.jpg",
+            thumbnail: "/galeria3.jpg",
+        },
+        {
+            id: 4,
+            original: "/galeria4.jpg",
+            thumbnail: "/galeria4.jpg",
+        },
+        {
+            id: 5,
+            original: "/galeria5.jpg",
+            thumbnail: "/galeria5.jpg",
+        },
+        {
+            id: 6,
+            original: "/galeria6.jpg",
+            thumbnail: "/galeria6.jpg",
+        },
+        {
+            id: 7,
+            original: "/galeria7.jpg",
+            thumbnail: "/galeria7.jpg",
+        },
+        {
+            id: 10,
+            original: "/galeria9.jpg",
+            thumbnail: "/galeria9.jpg",
+        },
+        {
+            id: 11,
+            original: "/galeria10.jpg",
+            thumbnail: "/galeria10.jpg",
+        },
+        {
+            id: 12,
+            original: "/galeria11.jpg",
+            thumbnail: "/galeria11.jpg",
+        },
+        {
+            id: 13,
+            original: "/galeria12.jpg",
+            thumbnail: "/galeria12.jpg",
+        },
+        {
+            id: 8,
+            original: "/home_interior_hotel.jpg",
+            thumbnail: "/home_interior_hotel.jpg",
+        },
+        {
+            id: 9,
+            original: "/home_interior_hotel2.jpg",
+            thumbnail: "/home_interior_hotel2.jpg",
+        },
+        {
+            id: 22,
+            original: "/galeria13.jpg",
+            thumbnail: "/galeria13.jpg",
+        },
     ]
+    
+
 
 
 
