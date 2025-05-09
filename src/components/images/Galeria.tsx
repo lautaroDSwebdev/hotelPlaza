@@ -1,6 +1,6 @@
 import { appData } from '@/mock';
 import React from 'react'
-import ImageGallery from "react-image-gallery";
+// import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 export const Galeria = () => {
 
@@ -10,7 +10,7 @@ export const Galeria = () => {
             <article className='g-height-header max-with-viewp min-h-screen'>
                 <h1 className='flex justify-center text-[3rem] font-bold'>Galeria de imagenes</h1>
 
-                <ImageGallery items={gallery} ></ImageGallery>
+                {/* <ImageGallery items={gallery} ></ImageGallery> */}
             </article>
         </div>
     )
