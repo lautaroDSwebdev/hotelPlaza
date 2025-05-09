@@ -175,7 +175,7 @@ export const appData = {
 
             {
                 id: 5,
-                url: "/bano.jpg"
+                url: "/comodidades06.jpg"
             },
             {
                 id: 6,

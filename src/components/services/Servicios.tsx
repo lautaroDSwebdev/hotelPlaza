@@ -18,60 +18,66 @@ const Servicios = () => {
                     <h2 className='g-paragrapg-size'> El Plaza Hotel es una excelente opción para descansar o bien para su viaje de negocios dado que se encuentra en el centro de Tandil.</h2>
                 </div>
 
-                <section className='flex  justify-between  p-[2rem] gap-[2rem]'>
+                <section className='md:flex  md:justify-between  p-[2rem] gap-[2rem]'>
 
-                    <ul>
-                        <li className='g-paragrapg-size'>Desayuno Buffet</li>
-                        <li className='g-paragrapg-size'>Room service las 24 hs</li>
-                        <li className='g-paragrapg-size'>Confitería / Snack bar las 24 hs.</li>
-                        <li className='g-paragrapg-size'>Servicio de telefonía con DDN y DDI</li>
-                        <li className='g-paragrapg-size'>
+                    <ul className='p-[2rem]'>
+                        <li className=''>Desayuno Buffet</li>
+                        <li className=''>Room service las 24 hs</li>
+                        <li className=''>Confitería / Snack bar las 24 hs.</li>
+                        <li className=''>Servicio de telefonía con DDN y DDI</li>
+                        <li className=''>
                             Internet WiFi
 
                         </li>
-                        <li className='g-paragrapg-size'>
+                        <li className=''>
                             Recepción y envío de fax
 
                         </li>
-                        <li className='g-paragrapg-size'>
+                        <li className=''>
                             Servicio de lavandería y tintorería
 
                         </li>
-                        <li className='g-paragrapg-size'>
+                        <li className=''>
                             Sala de estar en el lobby
 
                         </li>
-                        <li className='g-paragrapg-size'>
+                        <li className=''>
                             Ambiente climatizado
 
                         </li>
-                        <li className='g-paragrapg-size'>
+                        <li className=''>
 
                             Baby Sitter
                         </li>
-                        <li className='g-paragrapg-size'>
+                        <li className=''>
                             Ascensores
 
                         </li>
-                        <li className='g-paragrapg-size'>
+                        <li className=''>
                             Caja de seguridad
 
                         </li>
+                        <li>Area médica protegida las 24 hs.</li>
+                        <li>Cocheras cubiertas.</li>
+                        <li>Traslados</li>
+                        <li>Acceso gratuito al SPA y Piscina(no incluye sesión de masajes)</li>
+                        
                     </ul>
-                    <ul>
-                        <h3>Servicios internos y externos opcionales:</h3>
-                        <li className='g-paragrapg-size'>Restaurant a la carta</li>
-                        <li className='g-paragrapg-size'>SnackBar</li>
-                        <li className='g-paragrapg-size'>Sala de Reuniones</li>
-                        <li className='g-paragrapg-size'>Masajes en nuestro SPA</li>
-                        <li className='g-paragrapg-size'>Visitas guiadas y citi tours.</li>
-                        <li className='g-paragrapg-size'>Cabalgatas y vuelos turísticos</li>
-                        <li className='g-paragrapg-size'>Caminatas nocturnas por los cerros</li>
-                        <li className='g-paragrapg-size'>Circuitos en cuatriciclos</li>
-                        <li className='g-paragrapg-size'>Trekking, escalada, rapel, cicloturismo</li>
-                        <li className='g-paragrapg-size'>Asados campestres.</li>
-                        <li className='g-paragrapg-size'>Cines y teatros.</li>
-                        <li className='g-paragrapg-size'>Casino.</li>
+                   
+                    <ul className='p-[2rem]'>
+                        <h3 className='font-bold text-[22px] md:text-center'>Servicios internos y externos opcionales:</h3>
+                        <li className=''>Restaurant a la carta</li>
+                        <li className=''>SnackBar</li>
+                        <li className=''>Sala de Reuniones</li>
+                        <li className=''>Masajes en nuestro SPA</li>
+                        <li className=''>Visitas guiadas y citi tours.</li>
+                        <li className=''>Cabalgatas y vuelos turísticos</li>
+                        <li className=''>Caminatas nocturnas por los cerros</li>
+                        <li className=''>Circuitos en cuatriciclos</li>
+                        <li className=''>Trekking, escalada, rapel, cicloturismo</li>
+                        <li className=''>Asados campestres.</li>
+                        <li className=''>Cines y teatros.</li>
+                        <li className=''>Casino.</li>
                     </ul>
                 </section>
                 <div className='p-[2rem]'>
@@ -82,7 +88,7 @@ const Servicios = () => {
 
                     <CarruselShadcn data={imgenesServicios} />
                 </div>
-            <Grid data={imgenesServicios} />
+                <Grid data={imgenesServicios} />
             </article>
         </div>
     )
