@@ -16,7 +16,10 @@
 .g-powder-bg{
   background: #F7F7F2;
 }
-
+.g-contorno-texto{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
 .g-paragrapg-size{
   padding: 1rem;
   font-weight: bold;
