@@ -86,6 +86,7 @@ html {
   height: auto;
   width: 852px;
   margin: auto;
+  aspect-ratio: 237/86;
 }
 iframe {
   width: 100%;
