@@ -4,12 +4,8 @@
     right: 0px;
     cursor: pointer;
     svg{
-        view-timeline-name: --arrow ;
-        view-timeline-axis: block ;
-        animation-timeline: --arrow;
-        animation-name: animacion_scroll;
-        animation-range: entry 25% cover 100%;
-        animation-fill-mode:both ;
+       
+        
         border-radius: 100%;
         width: 5rem;
         height: 5rem;
@@ -17,13 +13,3 @@
     }
 
 }
-
-@keyframes animacion_scroll {
-    from{
-        opacity: 0;
-    }to{
-        
-        opacity: 1;
-    }
-}
-

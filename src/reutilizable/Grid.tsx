@@ -12,7 +12,7 @@ export const Grid = ({ data }: { data: Data[] }) => {
             <section className='grid_images'>
                 {
                     data.map(e => (
-                        <img key={e.id} src={e.url} alt="imagen" />
+                        <img className='g-scroll-animated' key={e.id} src={e.url} alt="imagen" />
                     ))
                 }
             </section>
