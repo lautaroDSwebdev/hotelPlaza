@@ -2,17 +2,25 @@
   --height: 27px;
   --width: 27px;
 }
+.max-width-footer{
+  max-width: 400px;
+  margin: auto;
+  padding:1rem ;
+  @media (width > 780px) {
+    
+    max-width: 900px;
+  }
+}
 footer {
   color: #fff;
-  height: 10vh;
+  height: 14vh;
   padding: 5px;
   position: absolute;
   bottom: -44rem;
   left: 0;
   right: 0;
   @media (width < 800px) {
-    height: 8vh;
-    
+    height: 13vh;
   }
   b{
     color: #000;
@@ -20,10 +28,22 @@ footer {
       display: none;
     }
   }
-  section{
+  article{
     display: flex;
-    justify-content: center;
+    flex-flow: column;
     gap: 1rem;
+    .section_contact{
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .section_copyright{
+      display: flex;
+      justify-content: center;
+      p{
+        color: #000;
+      }
+    }
     div{
       display: flex;
       justify-content: center;
