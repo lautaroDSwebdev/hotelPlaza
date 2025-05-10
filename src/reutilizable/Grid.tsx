@@ -7,7 +7,7 @@ interface Data {
 
 export const Grid = ({ data }: { data: Data[] }) => {
     return (
-        <div className='max-with-viewp div_grid-images pt-[3rem] '>
+        <div className='max-with-viewp div_grid-images  '>
             <b>Algunas imagenes</b>
             <section className='grid_images'>
                 {

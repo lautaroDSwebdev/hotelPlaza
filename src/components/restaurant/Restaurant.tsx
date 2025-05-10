@@ -3,6 +3,7 @@ import React from 'react'
 import "./style.css"
 import { Grid } from '@/reutilizable'
 import { CarruselShadcn } from '@/reutilizable/CarruselShadcn'
+import FotterComponent from '../fotter/Fotter'
 const Restaurant = () => {
     let { presentacion } = appData.restaurant,
         { imagenesRestaurant } = appData.restaurant,
@@ -23,6 +24,7 @@ const Restaurant = () => {
                 <CarruselShadcn data={imagenesRestaurant}/>
                 </div>
             <Grid data={imagenesRestaurant} />
+            <FotterComponent></FotterComponent>
             </article>
         </div>
     )

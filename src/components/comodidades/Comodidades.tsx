@@ -2,6 +2,7 @@ import { appData } from '@/mock'
 import { Grid } from '@/reutilizable'
 import { CarruselShadcn } from '@/reutilizable/CarruselShadcn'
 import React from 'react'
+import FotterComponent from '../fotter/Fotter'
 
 export const Comodidades = () => {
     let { imagenComodidades,
@@ -20,6 +21,7 @@ export const Comodidades = () => {
                     <CarruselShadcn data={imagenesComodidades} />
                 </div>
             <Grid data={imagenesComodidadesSinbaño} />
+            <FotterComponent></FotterComponent>
             </article>
         </div>
     )

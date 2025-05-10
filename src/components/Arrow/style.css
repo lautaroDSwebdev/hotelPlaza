@@ -1,0 +1,12 @@
+.arrow_style{
+    position: fixed;
+    top: 34rem;
+    right: 0px;
+    cursor: pointer;
+    svg{
+        border-radius: 100%;
+        width: 5rem;
+        height: 5rem;
+        backdrop-filter: blur(3px);
+    }
+}

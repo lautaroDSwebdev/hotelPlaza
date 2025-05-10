@@ -20,7 +20,7 @@ export const Navbar = () => {
   const path = usePathname()
   return (
     <>
-      <section className="max-with-viewp   nav-desk ">
+      <section id='inicio' className="max-with-viewp   nav-desk ">
         <div>
           <Link href={`/hotel`}>
             <img src={url} alt="imagen logo" />
@@ -54,7 +54,7 @@ export const Navbar = () => {
         </div>
       </section>
 
-      <section className="max-with-viewp  nav-mob">
+      <section id='inicio' className="max-with-viewp  nav-mob">
         <div className="flex justify-between items-center">
           <Link href={`/hotel`}>
             <img src={urlMobile} alt="imagen logo" />

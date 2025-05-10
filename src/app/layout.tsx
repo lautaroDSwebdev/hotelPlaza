@@ -3,6 +3,7 @@ import { Geist } from "next/font/google";
 import "../globals.css";
 import FotterComponent from "@/components/fotter/Fotter";
 import { Navbar } from "@/components/nav";
+import { ArrowUp } from "@/components/Arrow/ArrowUp";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +31,7 @@ export default function RootLayout({
       <body>
         <Navbar></Navbar>
         <main>{children}</main>
-        <FotterComponent></FotterComponent>
+        <ArrowUp/>
       </body>
     </html>
   );

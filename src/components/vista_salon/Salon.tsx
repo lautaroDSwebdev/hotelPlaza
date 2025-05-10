@@ -3,6 +3,7 @@ import "./estilos.css"
 import { appData } from '@/mock'
 import { Grid } from '@/reutilizable'
 import { CarruselShadcn } from '@/reutilizable/CarruselShadcn'
+import FotterComponent from '../fotter/Fotter'
 const Salon = () => {
     let { imagen_salon } = appData.salon,
         { imagenesSalon } = appData.salon
@@ -22,6 +23,7 @@ const Salon = () => {
                     <CarruselShadcn data={imagenesSalon} />
                 </div>
                 <Grid data={imagenesSalon} />
+                <FotterComponent></FotterComponent>
             </article>
         </div>
     )

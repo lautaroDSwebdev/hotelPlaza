@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  scroll-behavior: smooth;
+}
 
 /* Paleta de colores pagina */
 .g-black-bg{
@@ -16,6 +19,12 @@
 .g-powder-bg{
   background: #F7F7F2;
 }
+.g-titles-h1{
+  padding: 1rem;
+  text-align: left;
+  font-weight: bold;
+  font-size:3rem ;
+}
 .g-contorno-texto{
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
@@ -24,7 +33,7 @@
   padding: 1rem;
   font-weight: bold;
   font-size: 22px;
-  text-align: center;
+  text-align: left;
 }
 .div_grid-images{
   height: 50vh;
@@ -35,6 +44,7 @@
   gap: 1rem;
   height: 31vh;
   min-width: 320px;
+  margin-top: 2rem;
   img{
     border-radius: 4px;
   }

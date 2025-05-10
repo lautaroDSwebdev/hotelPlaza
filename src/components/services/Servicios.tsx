@@ -3,6 +3,7 @@ import React from 'react'
 import "./style.css"
 import { Grid } from '@/reutilizable'
 import { CarruselShadcn } from '@/reutilizable/CarruselShadcn'
+import FotterComponent from '../fotter/Fotter'
 const Servicios = () => {
 
     let { imagenServicios } = appData.servicios,
@@ -10,10 +11,10 @@ const Servicios = () => {
 
 
     return (
-        <div>
-            <article className='g-height-header max-with-viewp min-h-screen'>
+        <div className='min-h-screen'>
+            <article className='g-height-header max-with-viewp '>
                 <img className='g-image-header' src={imagenServicios} alt='Imagen Servicios' />
-                <h1 className='flex justify-center text-[3rem] font-bold'>Servicios</h1>
+                <h1 className='g-titles-h1'>Servicios</h1>
                 <div className='p-[2rem] '>
                     <h2 className='g-paragrapg-size'> El Plaza Hotel es una excelente opción para descansar o bien para su viaje de negocios dado que se encuentra en el centro de Tandil.</h2>
                 </div>
@@ -90,6 +91,7 @@ const Servicios = () => {
                 </div>
                 <Grid data={imgenesServicios} />
             </article>
+            <FotterComponent></FotterComponent>
         </div>
     )
 }
