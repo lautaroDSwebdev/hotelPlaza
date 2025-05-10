@@ -20,7 +20,7 @@ export const Navbar = () => {
   const path = usePathname()
   return (
     <>
-      <section id='inicio' className="max-with-viewp   nav-desk ">
+      <section  className="max-with-viewp   nav-desk ">
         <div>
           <Link href={`/hotel`}>
             <img src={url} alt="imagen logo" />
