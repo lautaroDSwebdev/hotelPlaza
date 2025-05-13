@@ -31,7 +31,7 @@ export default function RootLayout({
       <body>
         <Navbar></Navbar>
         <main>{children}</main>
-        <ArrowUp/>
+        {/* <ArrowUp/> */}
       </body>
     </html>
   );

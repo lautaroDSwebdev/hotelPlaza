@@ -4,7 +4,7 @@ import "./style.css"
 export const ArrowUp = () => {
     return (
         <a href='#inicio' className='arrow_style flex md:hidden'>
-            <FiArrowUpCircle className='g-textgcolor-page g-scroll-animated' />
+            <FiArrowUpCircle className='g-scroll-animated' />
         </a>
 
     )

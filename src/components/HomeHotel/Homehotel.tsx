@@ -16,12 +16,12 @@ export const Homehotel = () => {
     <div>
       <article className="g-height-header max-with-viewp min-h-screen">
         <img className="g-image-header" src={imagehome} alt="imagen home" />
-        <h1 className=" g-titles-h1 ">
+        <h1 className=" g-titles-h1 g-textgcolor-page g-contorno-texto ">
           Bienvenidos
         </h1>
         <div className=" ">
           <p className="g-paragrapg-size">
-            <b className="g-textgcolor-page g-contorno-texto text-[2rem]">El Plaza Hotel</b> está ubicado estratégicamente en
+            <b className=" text-[2rem]">El Plaza Hotel</b> está ubicado estratégicamente en
             el corazón de la ciudad de Tandil. Esta ubicación frente a la plaza
             central le permite a los pasajeros una rápida conexión con los
             paseos típicos de la ciudad, el casino, el lago, las sierras

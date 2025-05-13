@@ -14,14 +14,10 @@ const Servicios = () => {
         <div className='min-h-screen'>
             <article className='g-height-header max-with-viewp '>
                 <img className='g-image-header' src={imagenServicios} alt='Imagen Servicios' />
-                <h1 className='g-titles-h1'>Servicios</h1>
-                <div className='p-[2rem] '>
-                    <h2 className='g-paragrapg-size'> El Plaza Hotel es una excelente opción para descansar o bien para su viaje de negocios dado que se encuentra en el centro de Tandil.</h2>
-                </div>
+                <h1 className='g-titles-h1 g-textgcolor-page g-contorno-texto'>Servicios</h1>
+                <section className='md:flex  md:justify-between  p-[1rem] gap-[2rem]'>
 
-                <section className='md:flex  md:justify-between  p-[2rem] gap-[2rem]'>
-
-                    <ul className='p-[2rem]'>
+                    <ul className=''>
                         <li className=''>Desayuno Buffet</li>
                         <li className=''>Room service las 24 hs</li>
                         <li className=''>Confitería / Snack bar las 24 hs.</li>
@@ -65,7 +61,7 @@ const Servicios = () => {
                         
                     </ul>
                    
-                    <ul className='p-[2rem]'>
+                    <ul className='pt-[2rem]'>
                         <h3 className='font-bold text-[22px] md:text-center'>Servicios internos y externos opcionales:</h3>
                         <li className=''>Restaurant a la carta</li>
                         <li className=''>SnackBar</li>
@@ -81,15 +77,11 @@ const Servicios = () => {
                         <li className=''>Casino.</li>
                     </ul>
                 </section>
-                <div className='p-[2rem]'>
-                    <h3>Reservas</h3>
-                    <p>La forma mas rápida para consultar disponibilidad, escríbanos por WhatsApp o por email, no olvide consignar fecha de ingreso y de salida, cantidad de personas y su nombre.</p>
-                </div>
+               
                 <div className="flex justify-center">
 
                     <CarruselShadcn data={imgenesServicios} />
                 </div>
-                <Grid data={imgenesServicios} />
             </article>
             <FotterComponent></FotterComponent>
         </div>

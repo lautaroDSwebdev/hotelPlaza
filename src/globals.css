@@ -15,16 +15,16 @@ html {
   view-timeline-axis: block ;
   animation-timeline: --arrow;
   animation-name: animacion_scroll;
-  animation-range: entry 25% cover 100%;
+  animation-range: entry 63% cover 229%;
   animation-fill-mode:both ;
 }
 
 @keyframes animacion_scroll {
   from{
-      opacity: 0;
+    opacity: 0%;
   }to{
       
-      opacity: 1;
+      opacity: 100%;
   }
 }
 
@@ -84,7 +84,7 @@ html {
 }
 .g-image-header {
   height: auto;
-  width: 852px;
+  width: 1154px;
   margin: auto;
   aspect-ratio: 237/86;
 }

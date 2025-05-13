@@ -13,10 +13,10 @@ const Salon = () => {
         <div>
             <article className='g-height-header max-with-viewp min-h-screen'>
                 <img className='g-image-header' src={imagen_salon} alt='imagen restoran' />
-                <h1 className='g-titles-h1'>Salones</h1>
+                <h1 className='g-titles-h1 g-textgcolor-page g-contorno-texto'>Salones</h1>
                 <div className=' '>
-                    <p className='g-paragrapg-size'> El Restaurant del Plaza Hotel le ofrece diariamente un menú ejecutivo con opciones que usted podrá acomodar a sus horarios y reuniones de trabajo.</p>
-                    <p className='g-paragrapg-size '>No solo los pasajeros del hotel pueden deleitarse con la cocina internacional propuesta por el chef ya que el restaurant es abierto al público en general y en su cálido ambiente usted podrá disfrutar -en familia o entre amigos- de una amplia gama de platos y las sugerencias para todos los gustos.</p>
+                    <p className='g-paragrapg-size'>El Plaza Hotel le ofrece una cómoda Sala de Reuniones con capacidad de hasta 50 personas, siendo el medio ideal para llevar a cabo: Congresos y Convenciones, Lanzamientos de productos, Comercialización de los mismos, Rondas de negocios, Entrenamiento laboral, Seminarios de actualización, Fiestas Cualquier otro evento que su empresa requiera.</p>
+                    
                 </div>
                 <div className="flex justify-center">
 

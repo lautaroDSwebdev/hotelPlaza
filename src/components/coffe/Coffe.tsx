@@ -13,7 +13,7 @@ export const Coffe = () => {
         <div>
             <article className='g-height-header max-with-viewp min-h-screen'>
                 <img className='g-image-header' src={imagenCafeteria} alt='imagen cafe' />
-                <h1 className='g-titles-h1'>Cafetería / Snack Bar</h1>
+                <h1 className='g-titles-h1 g-textgcolor-page g-contorno-texto'>Cafetería / Snack Bar</h1>
                 <div className=' '>
                     <p className='g-paragrapg-size'> La Cafetería del Plaza Hotel, abierta a todo el público, le propone disfrutar del exquisito café recién molido en un desayuno inigualable con una imponente vista de la plaza central. El vermouth cerca del mediodía o la cerveza por la tardecita será el deleite en una reunión con amigos. Y por la noche... tragos largos y el afamado whisky</p>
                 </div>
