@@ -19,7 +19,7 @@ const FotterComponent = () => {
             <b>plazahoteltandil@gmail.com</b>
           </div>
           <div>
-            <a target='_blank' href="https://api.whatsapp.com/send?phone=2494427160">
+            <a target='_blank' href="https://api.whatsapp.com/send?phone=2494600471">
               <BsWhatsapp className='wsp' />
             </a>
             <b>(0249)4427160/80/89</b>
